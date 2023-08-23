@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Places</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/sciencecity2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo {
+    color: black;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-shadow: 3px 3px rgba(133, 127, 127, 0.936);
+}
+
+span {
+    color: #f9004d;
+}
+
+.lg span {
+    color: #f9004d;
+    text-shadow: 3px 3px rgba(133, 127, 127, 0.936);
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-shadow: 3px 3px rgba(91, 87, 87, 0.936);
+}
+
+nav ul li a:hover {
+    color: #f9004d;
+    transition: .4s;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+h1 {
+    color: White;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+    text-shadow: 4px 3px rgba(50, 49, 49, 0.936);
+}
+
+h3 {
+    color: White;
+    font-size: 25px;
+    margin-bottom: 50px;
+    text-shadow: 4px 3px rgba(50, 49, 49, 0.936);
+}
+
+h4 {
+    color: #fcfc;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: White;
+}
+
+.about img {
+    height: auto;
+    width: 430px;
+}
+
+.about-text {
+    width: 550px;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h2 {
+    color: black;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5 {
+    color: black;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.about-text p {
+    color: black;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+.btn {
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+.hero1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/nicco2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.btnn a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+.btnn a:hover {
+    background-color: rgba(63, 125, 241, 0.816);
+    color: black;
+}
+
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+    border-style: groove;
+    border-radius: 20px;
+}
+
+.next {
+    background-color: #f1f1f1;
+    color: black;
+    border-style: groove;
+    border-radius: 20px;
+
+}
+
+.round {
+    border-radius: 100%;
+    border-style: groove;
+    border-color: black;
+}
+
+.previous:hover {
+    transform: scale(1.3);
+}
+
+.next:hover {
+    transform: scale(1.3);
+}
+
+
+.astrodivider {
+    margin: 64px auto;
+    width: 400px;
+    max-width: 100%;
+    position: relative;
+}
+
+.astrodividermask {
+    overflow: hidden;
+    height: 20px;
+}
+
+.astrodividermask:after {
+    content: '';
+    display: block;
+    margin: -25px auto 0;
+    width: 100%;
+    height: 25px;
+    border-radius: 125px / 12px;
+    box-shadow: 0 0 8px black;
+}
+
+.astrodivider span {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: -25px;
+    left: 50%;
+    margin-left: -25px;
+    border-radius: 100%;
+    box-shadow: 0 2px 4px black;
+    background: #fff;
+}
+
+.astrodivider i {
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    border-radius: 100%;
+    border: 1px dashed black;
+    text-align: center;
+    line-height: 40px;
+    font-style: normal;
+    color: black;
+}
+    </style>
+</head>
+
+<body>
+
+    <div class="hero">
+        <nav>
+            <h2 class="logo">Kol<span>kata</span></h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Places</a></li>
+                <li><a href="#">Page section </a></li>
+            </ul>
+            <a href="page4.html" class="btn">Next page</a>
+        </nav>
+
+        <div class="content">
+            <h1>Science <span>City</span></h1>
+            <h3>A science centre and science park.</h3>
+
+        </div>
+    </div>
+
+    <section class="about">
+        <div class="main">
+            <img src="img/sci.png">
+            <div class="about-text">
+                <h2>About</h2>
+                <h5>Science <span>City</span></h5>
+                <p>Science City Kolkata is a science centre and science park in Kolkata, West Bengal, India. It is the largest science
+                centre in Asia containing a science museum, science park and auditoriums. It is managed by National Council of
+                Science Museums (NCSM), Ministry of Culture, Government of India. It is located at the crossing of Eastern Metropolitan
+                Bypass and J. B. S. Haldane Avenue (Parama Island) in East Topsia. Saroj Ghose, the first director general of NCSM, is
+                credited with having conceptualised this centre in 1997. This centre was inaugurated by two parts: the ‘Convention
+                Centre Complex’ was unveiled on 21 December 1996 by Paul Jozef Crutzen in presence of the then chief minister Jyoti Basu
+                and the whole centre was opened by the then prime minister Inder Kumar Gujral on 1 July 1997. On 10 January 2010, prime
+                minister of India, Manmohan Singh laid the foundation stone for the second phase of Science City in presence of the then
+                chief minister of West Bengal, Buddhadeb Bhattacharjee. </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="hero1">
+
+        <div class="content2">
+            <h1>Nicco<span> Park</span></h1>
+            <h3>An amusement park.</h3>
+
+        </div>
+    </div>
+
+    <section class="about">
+        <div class="main">
+            <img src="img/nic.png">
+            <div class="about-text">
+                <h2>About</h2>
+                <h5>Nicco<span> Park</span></h5>
+                <p>Nicco Park is an amusement park located in Jheel Meel, Sector - IV of Bidhannagar, West Bengal, India. The park was
+                created to attract tourists to the state by providing family-friendly recreation as well as educative entertainment.
+                Nicco Park opened on 13 October 1991 and has since been referred to as the Disneyland of West Bengal. Presently,
+                the 40 acre park is home to over 35 different attractions and has served over 24 million customers. Nicco Park also
+                provides a "green" environment.
+                The concept of an amusement park in the Kolkata region began with the 300th anniversary of the recorded founding of
+                Kolkata (then Calcutta). While planning was under way for the tricentennial celebrations by the ruling State
+                Government, Rajive Kaul, the current Chairman of Nicco Group, was in the US on a family holiday to Disneyland.
+               </p>
+            </div>
+        </div>
+        <div class="astrodivider">
+            <div class="astrodividermask">
+
+            </div>
+            <span><i>&#10038;</i></span>
+        </div>
+        <center>
+            <div class="btnn">
+                <a href="page4.html" class="previous"> &laquo Privious </a>
+
+            </div>
+        </center>
+
+</body>
+
+</html>

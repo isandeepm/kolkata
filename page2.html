@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Places</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/victoria.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo {
+    color: black;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+span {
+    color: #f9004d;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover {
+    color: #f9004d;
+    transition: .4s;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+h1 {
+    color: black;
+    margin : 20px 0px 20px;
+    font-size : 75px;
+    text-shadow : 3px 3px rgba(133, 127, 127, 0.936);
+}
+
+h3 {
+    color: black;
+    font-size: 25px;
+    margin-bottom: 50px;
+    text-shadow: 3px 3px rgba(133, 127, 127, 0.936);
+}
+
+h4 {
+    color: #fcfc;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color:White;
+}
+
+.about img {
+    height: auto;
+    width: 430px;
+}
+
+.about-text {
+    width: 550px;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h2 {
+    color:black;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5 {
+    color: black;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.about-text p {
+    color: black;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+.btn {
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+.hero1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/prin.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.btnn a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+.btnn a:hover {
+    background-color: rgba(63, 125, 241, 0.816);
+    color: black;
+}
+
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+    border-style: groove;
+    border-radius: 20px;
+}
+.next {
+    background-color: #f1f1f1;
+    color: black;
+    border-style: groove;
+    border-radius: 20px;
+   
+}
+
+.round {
+    border-radius: 100%;
+    border-style: groove;
+    border-color: black;
+}
+.previous:hover {
+    transform: scale(1.3);
+}
+
+.next:hover {
+    transform: scale(1.3);
+}
+
+
+.astrodivider {
+    margin: 64px auto;
+    width: 400px;
+    max-width: 100%;
+    position: relative;
+}
+
+.astrodividermask {
+    overflow: hidden;
+    height: 20px;
+}
+
+.astrodividermask:after {
+    content: '';
+    display: block;
+    margin: -25px auto 0;
+    width: 100%;
+    height: 25px;
+    border-radius: 125px / 12px;
+    box-shadow: 0 0 8px black;
+}
+
+.astrodivider span {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: -25px;
+    left: 50%;
+    margin-left: -25px;
+    border-radius: 100%;
+    box-shadow: 0 2px 4px black;
+    background: #fff;
+}
+
+.astrodivider i {
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    border-radius: 100%;
+    border: 1px dashed black;
+    text-align: center;
+    line-height: 40px;
+    font-style: normal;
+    color: black;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <div class="hero">
+        <nav>
+            <h2 class="logo">Kol<span>kata</span></h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Places</a></li>
+                <li><a href="#">Page section </a></li>
+            </ul>
+            <a href="page3.html" class="btn">Next page</a>
+        </nav>
+
+        <div class="content">
+            <h1>Victoria <span>Memorial</span></h1>
+            <h3>A memorial to the deceased Queen Victoria.</h3>
+           
+        </div>
+    </div>
+
+    <!----About section start---->
+    <section class="about">
+        <div class="main">
+            <img src="img/vic.png">
+            <div class="about-text">
+                <h2>About</h2>
+                <h5>Victoria <span>Memorial</span></h5>
+                <p>The Victoria Memorial is a large marble building on the Maidan in Central Kolkata, having its entrance on the Queen's
+                Way. It was built between 1906 and 1921 by the British government. It is dedicated to the memory of Queen Victoria,
+                Empress of India from 1876 to 1901. It is the largest monument to a monarch anywhere in the world, it stands in 64 acres
+                of gardens and is now a museum under the control of the Ministry of Culture. Possessing prominent features of the
+                British architecture of the colonial era, it has evolved into one of the most popular places in the city.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-----service section start----------->
+    <div class="hero1">
+    
+        <div class="content2">
+            <h1>Princep <span>Ghat</span></h1>
+            <h3>A memorial to James Princep.</h3>
+            
+        </div>
+    </div>
+    
+    <!----About section start---->
+    <section class="about">
+        <div class="main">
+            <img src="img/prince.png">
+            <div class="about-text">
+                <h2>About</h2>
+                <h5>Princep <span>Ghat</span></h5>
+                <p>Prinsep Ghat is a ghat built in 1841 during the British Raj, along the Kolkata bank of the Hooghly River in India. The
+                Palladian porch in the memory of the eminent Anglo-Indian scholar and antiquary James Prinsep was designed by W.
+                Fitzgerald and constructed in 1843.
+                
+                Located between the Water Gate and the St George's Gate of the Fort William, the monument to Prinsep is rich in Greek
+                and Gothic inlays. It was restored by the state's public works department in November 2001 and has since been
+                well-maintained.In its initial years, all royal British entourages used the Prinsep Ghat jetty for embarkation and
+                disembarkation.</p>
+            </div>
+        </div>
+    <div class="astrodivider">
+        <div class="astrodividermask">
+    
+        </div>
+        <span><i>&#10038;</i></span>
+    </div>
+    <center>
+            <div class="btnn">
+                <a href="index.html" class="previous"> &laquo Privious </a>
+                <a href="page3.html" class="next">Next &raquo;</a>
+                
+            </div>
+        </center>
+
+    
+</body>
+
+</html>

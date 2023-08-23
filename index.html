@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolkata</title>
+    <style> .container {
+     display: grid;
+     align-items: center;
+     grid-template-columns: 1fr 1fr;
+     column-gap: 1px;
+ }
+
+ .image {
+     max-width: 100%;
+     max-height: 100%;
+ }
+
+ .text {
+     font-size: 21.5px;
+ }
+.favContainer {
+    display: flex;
+    justify-content:center ;
+    flex-wrap: wrap;
+    background: rgb(255, 255, 255);
+}
+.card {
+    background: white;
+    width: 270px;
+    
+    margin: 10px;
+    border-radius: 20px;
+    border-style: dashed;
+}
+.card-image {
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-1 {
+    background-image: url('img/victoria.jpg');
+}
+.card-2 {
+    background-image: url('img/princep.jpg');
+}
+.card-3 {
+    background-image: url('img/howrah2.jpg');
+}
+.card-4 {
+    background-image: url('img/nandan1.jpg');
+}
+.card-5 {
+    background-image: url('img/college.jpg');
+}
+.card-6 {
+    background-image: url('img/sarovar.jpg');
+}
+.card-7 {
+    background-image: url('img/sciencecity.jpg');
+}
+.card-8 {
+    background-image: url('img/nicco.jpg');
+}
+.card h2 {
+    padding: 10px;
+}
+.card p {
+    padding: 10px;
+}
+.card a {
+    background-color: rgba(63, 125, 241, 0.816);
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    border-radius: 20px;
+}
+.card:hover {
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform:scale(1.05) ;
+}
+.btnn a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+  }
+  
+.btnn a:hover {
+    background-color: rgba(63, 125, 241, 0.816);
+    color: black;
+  }
+  
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+  }
+  
+.next {
+    background-color:#f1f1f1;
+    color: black;
+    border-style: groove;
+    border-radius: 20px;
+  }
+.next:hover {
+    transform:scale(1.3) ;
+  }
+  
+.astrodivider {
+    margin:64px auto;
+    width:400px; 
+    max-width: 100%;
+    position:relative;
+  }
+  
+.astrodividermask { 
+      overflow:hidden; height:20px; 
+  }
+  
+.astrodividermask:after { 
+        content:''; 
+        display:block; margin:-25px auto 0;
+        width:100%; height:25px;  
+          border-radius:125px / 12px;
+         box-shadow:0 0 8px black;
+  }
+  .astrodivider span {
+      width:50px; height:50px; 
+      position:absolute; 
+      bottom:100%; margin-bottom:-25px;
+      left:50%; margin-left:-25px;
+      border-radius:100%;
+     box-shadow:0 2px 4px black;
+      background:#fff;
+  }
+  .astrodivider i {
+      position:absolute;
+      top:4px; bottom:4px;
+      left:4px; right:4px;
+      border-radius:100%;
+      border:1px dashed black;
+      text-align:center;
+      line-height:40px;
+      font-style:normal;
+       color:black;
+  }
+.kolkata {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/kolkata.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo {
+    color: black;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+span {
+    color: #f9004d;
+}
+.content span{
+    color:white;
+    text-shadow: 10px;
+    text-shadow: rgba(95, 88, 95, 0.8);
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover {
+    color: #f9004d;
+    transition: .4s;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+.content h1 {
+    color: black;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+    text-shadow: 3px 3px rgba(133, 127, 127, 0.936);
+}
+
+.content h3 {
+    color: black;
+    font-size: 25px;
+    margin-bottom: 50px;
+    text-shadow: 3px 3px rgba(133, 127, 127, 0.936);
+}
+
+h4 {
+    color: #fcfc;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.btn {
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}</style>
+</head>
+
+<body>
+    <section>
+        <div class="kolkata">
+            <nav>
+                <h2 class="logo">Kol<span>kata</span></h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Places</a></li>
+                    <li><a href="#">Page section </a></li>
+                </ul>
+                <a href="page2.html" class="btn">Next page</a>
+            </nav>
+        
+            <div class="content">
+                <h1>Kol<span>kata</span></h1>
+                <h3>The city of joy</h3>
+            </div>
+    </section>
+ 
+    <div class="about">
+        <center>
+            <h1>About</h1>
+        </center>
+        <div class="container">
+            <div class="image">
+                <img src="img/kolkata2.jpg" height="90%" width="90%">
+            </div>
+            <div class="text">
+                <p>Kolkata is one of the most beautiful cities of India with its beautiful monuments. The capital of
+                    Kolkata in West Bengal. Previously, the city was named as Calcutta. It was the capital of British
+                    India for almost 138 years. The city is popularly known as the ‘city of joy’.</p>
+
+                <p>It is a place which mostly is dominated by Bengalis. Before the partition of India in 1947,
+                    Bangladesh or East Bengal was a part of Bengal province. The state language of Kolkata is Bengali.
+                    It is the place where the great writer and the Nobel Prize winner, Rabindranath Tagore was born.</p>
+
+                <p>The famous Shantiniketan is located in Kolkata. The largest National library of India by volume is
+                    located in Kolkata. It has become attracted to tourists from different corners of the country and
+                    from all over the world. The famous Howrah Bridge and Victoria Memorial and many other monuments
+                    have made the city a centre of attraction for the people.</p>
+
+                <p>Kolkata is also the city of many Nobel laureates like Rabindranath Tagore, Mother Teresa, Amartya Sen
+                    etc.</p>
+
+                <p>It is a city where various modes of transportation are available. The ancient trams are found in
+                    Kolkata. It is the first city of India where the underground metro services got introduced.</p>
+
+                <p>It is a wide place for shopping. It has become a centre for the businessmen around the country.
+                    People from different corners of the country visit Kolkata to buy different things at wholesale
+                    rate.</p>
+                <p>The city is also known for the biggest celebration of the festival Durga Puja. During Durga Puja, the
+                    city becomes a city of a huge crowd who join for celebrating Durga Puja. This time becomes one of
+                    the best times to visit Kolkata.</p>
+
+                <p>The whole city twinkles with millions of lights around the city. The place is famous for its
+                    delicious foods and desserts. Kolkata Biriani, Macher Jul and Kolkata Roll are famous in Kolkata.
+                    The desserts like Roshogollah, Mishti Doi, and Shondesh are very much popular in Kolkata.</p>
+            </div>
+        </div>
+    </div>
+    <u>
+        <center>
+            <h2>Favorite Placces</h2>
+        </center>
+    </u>
+    <section class="favContainer">
+        <div class="card">
+            <div class="card-image card-1"></div>
+            <h2>Victoria Memorial</h2>
+            <p> The Victoria Memorial is a large marble building on the Maidan in Central Kolkata, having its entrance
+                on the Queen's Way. It was built between 1906 and 1921 by the British government. It is dedicated to the
+                memory of Queen Victoria, Empress of India from 1876 to 1901.
+            </p>
+            <a href="page2.html">READ MORE</a>
+        </div>
+        <div class="card">
+            <div class="card-image card-2"></div>
+            <h2>Princep Ghat</h2>
+            <p>Prinsep Ghat is a ghat built in 1841 during the British Raj, along the Kolkata bank of the Hooghly River
+                in India.
+                The Palladian porch in the memory of the eminent Anglo-Indian scholar and antiquary James Prinsep was
+                designed by W. Fitzgerald and constructed in 1843.
+            </p>
+            <a href="page2.html">READ MORE</a>
+        </div>
+        <div class="card">
+            <div class="card-image card-3"></div>
+            <h2>Howrah Bridge</h2>
+            <p>The Howrah Bridge is a balanced cantilever bridge over the Hooghly River in West Bengal.
+                Commissioned in 1943, the bridge was originally named the New Howrah Bridge, because it replaced a
+                pontoon bridge at the same location linking the cities of Howrah and Kolkata (Calcutta).
+            </p>
+            <a href="page3.html">READ MORE</a>
+        </div>
+        <div class="card">
+            <div class="card-image card-4"></div>
+            <h2>Nandan</h2>
+            <p>Nandan is a government-sponsored film and cultural centre in Kolkata, India.The primary aim of the
+                cultural hub is to encourage and facilitate cinematic awareness in society. It includes a few
+                comparatively large screens housed in an impressively architectured building.
+            </p>
+            <a href="page3.html">READ MORE</a>
+        </div>
+    </section>
+    <section class="favContainer">
+        <div class="card">
+            <div class="card-image card-5"></div>
+            <h2>College Street</h2>
+            <p>
+                College Street is a 900 metre long street in Central Kolkata in the Indian state of West Bengal. Also
+                known as Boi Para (Bengali: বইপাড়া; lit. Book Town), it stretches from Bidhan Sarani road up to
+                Bowbazar via MG Road crossing and Surya Sen Street crossing.
+            </p>
+            <a href="page4.html">READ MORE</a>
+        </div>
+        <div class="card">
+            <div class="card-image card-6"></div>
+            <h2>Rabindra Sarobar</h2>
+            <p>
+                Rabindra Sarobar (formerly known as Dhakuria Lake) is an artificial lake, garden and park in South
+                Kolkata in the Indian state of West Bengal. The name also refers to the area surrounding the lake.It is
+                flanked by Southern Avenue to the North, Shyamaprasad Mukherjee Road.
+            </p>
+            <a href="page4.html">READ MORE</a>
+        </div>
+        <div class="card">
+            <div class="card-image card-7"></div>
+            <h2>Science City</h2>
+            <p>
+                Science City Kolkata is the largest science centre in Asia.It is managed by National Council of Science
+                Museums, Ministry of Culture, Government of India. It is located at the crossing of Eastern Metropolitan
+                Bypass and J. B. S. Haldane Avenue in East Topsia.
+            </p>
+            <a href="page5.html">READ MORE</a>
+        </div>
+        <div class="card">
+            <div class="card-image card-8"></div>
+            <h2>Nicco Park</h2>
+            <p>
+                Nicco Park is an amusement park located in Jheel Meel, Sector - IV of Bidhannagar, West Bengal, India.
+                The park was created to attract tourists to the state by providing family-friendly recreation as well as
+                educative entertainment. Nicco Park is refers the Disneyland of West Bengal.
+            </p>
+            <a href="page5.html">READ MORE</a>
+        </div>
+    </section>
+    <div class="astrodivider">
+        <div class="astrodividermask">
+
+        </div>
+        <span><i>&#10038;</i></span>
+    </div>
+    <center>
+    <div class="btnn">
+        <a href="page2.html" class="next">Next &raquo;</a>
+    </div>
+       
+    </center>
+</body>
+
+</html>
